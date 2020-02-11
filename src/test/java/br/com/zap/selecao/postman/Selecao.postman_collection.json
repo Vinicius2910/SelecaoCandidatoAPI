@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "ce1eeb0d-4eaf-4f85-a399-5ce18b270128",
+		"name": "Selecao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AdicionarCandidato",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"teste Mello\",\n\t\"cpf\": \"1234567\",\n\t\"dataNascimento\":\"1996-10-29\",\n\t\"rua\": \"rua iquiririm\",\n\t\"bairro\": \"butantã\"\n\t\"numero\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarCandidatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarCandidato",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"2\"\n\t\"nome\": \"Teste Vicente Mello\",\n\t\"cpf\": \"1234567\",\n\t\"dataNascimento\":\"1996-10-29\",\n\t\"rua\": \"rua iquiririm\",\n\t\"bairro\": \"butantã\",\n\t\"numero\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidatos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidatos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarCandidato",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

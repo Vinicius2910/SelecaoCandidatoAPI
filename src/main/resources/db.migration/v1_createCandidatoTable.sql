@@ -1,0 +1,9 @@
+CREATE TABLE candidato(
+id UUID    NOT NULL PRIMARY KEY,
+nome VARCHAR(60) NOT NULL,
+cpf  VARCHAR(18) NOT NULL,
+dataNascimento DATE NOT NULL,
+rua VARCHAR(100) NOT NULL,
+bairro VARCHAR(100)  NOT NULL,
+numenro INT NOT NULL
+);
